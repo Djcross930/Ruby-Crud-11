@@ -21,3 +21,7 @@ Content-Type: application/json
 {
   "name": "The Pirates"
 }
+
+####
+
+DELETE http://localhost:3000/teams/4
