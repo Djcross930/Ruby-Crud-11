@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get "/teams" => "teams#index"
   get "/teams/:id" => "teams#show"
   post "/teams" => "teams#create"
+  patch "/teams/:id" => "teams#update"
 end

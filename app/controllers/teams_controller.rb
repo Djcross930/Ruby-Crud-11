@@ -17,5 +17,13 @@ class TeamsController < ApplicationController
     render json: team.as_json
   end
 
+  def update
+    team = Team.find_by(id: params[:id])
+    team.name = params[:name] || team.name
+    team.record = params[:record] || team.record
+    team.save
+    render json: team.as_json
+  end
+
 
 end

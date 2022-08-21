@@ -14,3 +14,10 @@ Content-Type: application/json
   "name": "pirates",
   "record": "21-9"
 }
+###
+PATCH http://localhost:3000/teams/4
+Content-Type: application/json
+
+{
+  "name": "The Pirates"
+}
