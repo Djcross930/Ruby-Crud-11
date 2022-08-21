@@ -9,7 +9,13 @@ class TeamsController < ApplicationController
     render json: team.as_json
   end
 
-
+  def create
+    team = Team.new
+    team.name = params[:name]
+    team.record = params[:record]
+    team.save
+    render json: team.as_json
+  end
 
 
 end

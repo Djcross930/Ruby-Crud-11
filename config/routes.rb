@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   # root "articles#index"
   get "/teams" => "teams#index"
   get "/teams/:id" => "teams#show"
+  post "/teams" => "teams#create"
 end
